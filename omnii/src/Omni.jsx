@@ -156,9 +156,8 @@ const MoreInfo = () => (
         {/* ✅ Download PDF Button */}
      <a
   href="/venture-journey.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  download
+ download="venture-journey.pdf"
+       
 >
   📄 Open/Download PDF
 </a>
