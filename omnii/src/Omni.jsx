@@ -208,7 +208,7 @@ const Myself = () => {
         <div className="content-right">
           <img
             src={me}
-            alt="Y. Chetana Siva Durga"
+            alt="Y. Chetana"
             className="profile-pic"
           />
         </div>
