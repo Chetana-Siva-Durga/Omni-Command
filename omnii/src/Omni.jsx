@@ -156,15 +156,13 @@ const MoreInfo = () => (
         <p>OmniCommand simplifies the way you use your phone — speak, filter, and act instantly. All with an elegant, minimalist design.</p>
 
         {/* ✅ Download PDF Button */}
-        <a
-  href="https://raw.githubusercontent.com/Chetana-Siva-Durga/Omni-Command/main/venture-journey.pdf?raw=true"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="download-btn"
->
-  📄 Open/Download PDF
-</a>
-
+       <a
+          href={venturePDF}
+          download=""
+          className="download-btn"
+        >
+          📄 Download PDF
+        </a>
 
 
 
