@@ -157,7 +157,7 @@ const MoreInfo = () => (
 
         {/* ✅ Download PDF Button */}
         <a
-          href={venturePDF}
+          href={`${process.env.PUBLIC_URL}/venture-journey.pdf`}
           download="venture-journey.pdf"
           className="download-btn"
         >
