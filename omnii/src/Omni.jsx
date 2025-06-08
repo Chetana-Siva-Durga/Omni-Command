@@ -152,21 +152,7 @@ const MoreInfo = () => (
       <div className="text-side">
         <h2>AI in Every Touch</h2>
         <p>OmniCommand simplifies the way you use your phone — speak, filter, and act instantly. All with an elegant, minimalist design.</p>
-
-        {/* ✅ Download PDF Button */}
-     <a
-  href="/venture-journey.pdf"
- download="venture-journey.pdf"
-       
->
-  📄 Open/Download PDF
-</a>
-
-
-    
-
-
-      </div>
+ </div>
 
       <div className="image-side">
         <img src={img} alt="Omni usage" />
