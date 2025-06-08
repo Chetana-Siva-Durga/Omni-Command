@@ -5,8 +5,6 @@ import  { useState, useEffect } from 'react';
 import ommmm from "./ommmm.jpg"
 import img1 from "./img1.jpg";
 import me from "./me.jpg";
-import venturePDF from "./assets/venture-journey.pdf";
-
 
 
 
@@ -156,13 +154,14 @@ const MoreInfo = () => (
         <p>OmniCommand simplifies the way you use your phone — speak, filter, and act instantly. All with an elegant, minimalist design.</p>
 
         {/* ✅ Download PDF Button */}
-       <a
-  href={venturePDF}
+    <a
+  href="/venture-journey.pdf"
   target="_blank"
   rel="noopener noreferrer"
 >
   📄 Open/Download PDF
 </a>
+
 
     
 
