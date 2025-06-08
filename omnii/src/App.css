@@ -591,7 +591,6 @@ body {
 
 /* 🔁 Small devices (phones) */
 @media (max-width: 600px) {
-  /* Navbar becomes horizontal and top-fixed */
   .navbar {
     width: 100%;
     height: auto;
@@ -606,12 +605,10 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 
-  /* Hide logo image */
   .navbar-logo {
     display: none;
   }
 
-  /* Replace logo with "O" icon/letter */
   .navbar-left::before {
     content: "O";
     font-size: 2rem;
@@ -748,7 +745,6 @@ body {
   }
 }
 
-/* Breakpoint for tablets (768px to 1024px) */
 @media (max-width: 1024px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -787,7 +783,6 @@ body {
   }
 }
 
-/* Breakpoint for large mobiles to small tablets (600px to 768px) */
 @media (max-width: 768px) {
   .navbar {
     width: 100%;
@@ -841,7 +836,6 @@ body {
   }
 }
 
-/* Breakpoint for small mobile devices (<= 480px) */
 @media (max-width: 480px) {
   .hero-text h1 {
     font-size: 2rem;
