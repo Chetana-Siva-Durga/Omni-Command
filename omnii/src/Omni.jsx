@@ -148,6 +148,27 @@ const About = () => (
   </div>
 );
 
+// At top of file
+// inside MoreInfo component
+const handleDownload = async () => {
+  try {
+    const response = await fetch('/venture-journey.pdf');
+    if (!response.ok) throw new Error('Network response was not ok');
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'venture-journey.pdf';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.URL.revokeObjectURL(url);
+  } catch (err) {
+    console.error('Download failed:', err);
+  }
+};
+
+
 const MoreInfo = () => (
   <section className="more-info" id="more">
     <div className="more-content">
@@ -156,13 +177,10 @@ const MoreInfo = () => (
         <p>OmniCommand simplifies the way you use your phone — speak, filter, and act instantly. All with an elegant, minimalist design.</p>
 
         {/* ✅ Download PDF Button */}
-        <a
-          href="venture-journey.pdf"
-          download="venture-journey.pdf"
-          className="download-btn"
-        >
-          📄 Download PDF
-        </a>
+        <button onClick={handleDownload} className="download-btn">
+  📄 Download PDF
+</button>
+
 
 
 
