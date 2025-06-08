@@ -5,6 +5,7 @@ import  { useState, useEffect } from 'react';
 import ommmm from "./ommmm.jpg"
 import img1 from "./img1.jpg";
 import me from "./me.jpg";
+import venturePDF from "./assets/venture-journey.pdf";
 
 
 
@@ -156,12 +157,15 @@ const MoreInfo = () => (
 
         {/* ✅ Download PDF Button */}
         <a
-          href="/venture-journey.pdf" 
-          download
+          href={venturePDF}
+          download="venture-journey.pdf"
           className="download-btn"
         >
           📄 Download PDF
         </a>
+
+
+
       </div>
 
       <div className="image-side">
