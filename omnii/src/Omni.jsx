@@ -5,6 +5,8 @@ import  { useState, useEffect } from 'react';
 import ommmm from "./ommmm.jpg"
 import img1 from "./img1.jpg";
 import me from "./me.jpg";
+import venturePDF from "./assets/venture-journey.pdf";
+
 
 
 
@@ -152,7 +154,19 @@ const MoreInfo = () => (
       <div className="text-side">
         <h2>AI in Every Touch</h2>
         <p>OmniCommand simplifies the way you use your phone — speak, filter, and act instantly. All with an elegant, minimalist design.</p>
- </div>
+
+        {/* ✅ Download PDF Button */}
+        <a
+          href={venturePDF}
+          download="venture-journey.pdf"
+          className="download-btn"
+        >
+          📄 Download PDF
+        </a>
+
+
+
+      </div>
 
       <div className="image-side">
         <img src={img} alt="Omni usage" />
